@@ -29,7 +29,6 @@ public class ClienteResource {
     public Response newCliente() {
         var cliente = Cliente.of(1, "Hugo");
         var output = clienteService.newCliente(cliente);
-        System.out.println(output);
         return Response
                 .status(Response.Status.CREATED)
                 .entity(output)

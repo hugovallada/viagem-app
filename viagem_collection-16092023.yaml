@@ -1,0 +1,206 @@
+_type: export
+__export_format: 4
+__export_date: 2023-09-17T00:04:58.507Z
+__export_source: insomnia.desktop.app:v2023.5.7
+resources:
+  - _id: req_2513f66ec9944221a5cfbd7571773e3a
+    parentId: fld_66d5f608289d4d9e9aabc2106733c3b0
+    modified: 1694802064966
+    created: 1694801843100
+    url: "{{ _.localhost }}:8222/reservas"
+    name: Reservas
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: Insomnia/2023.5.7
+    authentication: {}
+    metaSortKey: -1694802062722
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_66d5f608289d4d9e9aabc2106733c3b0
+    parentId: wrk_2a3d97cf09ea443e83c2a4da49501af8
+    modified: 1694802048189
+    created: 1694802048189
+    name: Reservas
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1694802048189
+    _type: request_group
+  - _id: wrk_2a3d97cf09ea443e83c2a4da49501af8
+    parentId: null
+    modified: 1694801707482
+    created: 1694801707482
+    name: Viagem
+    description: ""
+    scope: collection
+    _type: workspace
+  - _id: req_9455753270c24edaa279b718c747e062
+    parentId: fld_66d5f608289d4d9e9aabc2106733c3b0
+    modified: 1694803786332
+    created: 1694802062622
+    url: "{{ _.localhost }}:8222/reservas"
+    name: New Request
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"id_cliente": "2"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: Insomnia/2023.5.7
+    authentication: {}
+    metaSortKey: -1694802062622
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_086b334d154241d899f1a82017c293de
+    parentId: fld_9e388b63799e432b89f108d0e23a6cd8
+    modified: 1694802411883
+    created: 1694802014207
+    url: "{{ _.localhost }}:8180/clientes"
+    name: Cliente
+    description: ""
+    method: POST
+    body:
+      mimeType: application/json
+      text: |-
+        {
+        	"nome": "Hugo Lopes"
+        }
+    parameters: []
+    headers:
+      - name: Content-Type
+        value: application/json
+      - name: User-Agent
+        value: Insomnia/2023.5.7
+    authentication: {}
+    metaSortKey: -1694802014207
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: fld_9e388b63799e432b89f108d0e23a6cd8
+    parentId: wrk_2a3d97cf09ea443e83c2a4da49501af8
+    modified: 1694801902319
+    created: 1694801902319
+    name: Clientes
+    description: ""
+    environment: {}
+    environmentPropertyOrder: null
+    metaSortKey: -1694801902319
+    _type: request_group
+  - _id: req_d5f12e530eb7483590cc55bb45a0ef2e
+    parentId: fld_9e388b63799e432b89f108d0e23a6cd8
+    modified: 1694803764651
+    created: 1694801966402
+    url: "{{ _.localhost }}:8180/clientes/1"
+    name: By Id
+    description: ""
+    method: DELETE
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: Insomnia/2023.5.7
+    authentication: {}
+    metaSortKey: -1694801916098
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_53b34ccae0904fceb1079c986fdb42ff
+    parentId: fld_9e388b63799e432b89f108d0e23a6cd8
+    modified: 1694803753053
+    created: 1694801915998
+    url: "{{ _.localhost }}:8180/clientes"
+    name: All
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: Insomnia/2023.5.7
+    authentication: {}
+    metaSortKey: -1694801915998
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: req_56b95d3b33f64a58a11ef0be3bd3b1f6
+    parentId: fld_9e388b63799e432b89f108d0e23a6cd8
+    modified: 1694802439671
+    created: 1694801752504
+    url: "{{ _.localhost }}:8180/clientes/1"
+    name: By Id
+    description: ""
+    method: GET
+    body: {}
+    parameters: []
+    headers:
+      - name: User-Agent
+        value: Insomnia/2023.5.7
+    authentication: {}
+    metaSortKey: -1694801909393
+    isPrivate: false
+    settingStoreCookies: true
+    settingSendCookies: true
+    settingDisableRenderRequestBody: false
+    settingEncodeUrl: true
+    settingRebuildPath: true
+    settingFollowRedirects: global
+    _type: request
+  - _id: env_f8108b53b2ad9bf897961aac3852b300bcedda1e
+    parentId: wrk_2a3d97cf09ea443e83c2a4da49501af8
+    modified: 1694801806134
+    created: 1694801707489
+    name: Base Environment
+    data:
+      localhost: http://localhost
+    dataPropertyOrder:
+      "&":
+        - localhost
+    color: null
+    isPrivate: false
+    metaSortKey: 1694801707489
+    _type: environment
+  - _id: jar_f8108b53b2ad9bf897961aac3852b300bcedda1e
+    parentId: wrk_2a3d97cf09ea443e83c2a4da49501af8
+    modified: 1694801707492
+    created: 1694801707492
+    name: Default Jar
+    cookies: []
+    _type: cookie_jar
